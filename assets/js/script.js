@@ -1,8 +1,8 @@
 var timeDisplay = $('#currentDay');
-var hour = moment().format('h a');
-// var input = getElementsByClassName(".textInput");
+var hour = moment().hour();
 var timeBlock = $('.container');
 var saveIcon = document.getElementsByClassName('.material-icons');
+
 //----------------------------------------------------
 //shows current date & time
 //----------------------------------------------------
@@ -11,25 +11,34 @@ function displayTime() {
     timeDisplay.text(currentTime);
 }
 displayTime();
-setInterval(displayTime,1000);
+setInterval(displayTime, 1000);
 
 //----------------------------------------------------
 //save button click event
 //----------------------------------------------------
-// saveIcon.addEventListener("click", function (event) {
-//     var textBox = document.getElementById('input').value;
-// })
+$(".saveBtn").on("click", function () {
+    
+})
 
 //----------------------------------------------------
 //if states for past/present/future
-//----------------------------------------------------
-$('.textInput').each(function(){
-    var val = parseInt($(this).prop('id'));
+//----------------------------------------------------    
+$('.time-block').each(function () {
+    var val = $(this).attr('id');
+
     if (val > hour) {
         $(this).addClass("future");
-    }else if (val == hour) {
+        $(this).removeClass("present");
+        $(this).removeClass("past");
+
+    } else if (val == hour) {
+        $(this).removeClass("future");
         $(this).addClass("present");
-    }else if (val < hour) {
-        $(this).addClass("past")
+        $(this).removeClass("past");
+
+    } else if (val < hour) {
+        $(this).removeClass("future");
+        $(this).removeClass("present");
+        $(this).addClass("past");
     }
 })
