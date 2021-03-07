@@ -18,10 +18,6 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link 
-      href="https://fonts.googleapis.com/css2?family=Material+Icons"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -32,108 +28,90 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+
     <div class="container">
-      <table class="table">
-        <tbody>
-          <tr>
-            <th scope="row" class="hour">8AM</th>
-            <td class="">
-              <textarea name="" id="input" class=present></textarea>
-            </td>
-            <td class="saveBtn">
-              <span class="material-icons ">
-                save
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="hour">9AM</th>
-            <td class="">
-              <textarea name="" id="input"></textarea>
-            </td>
-            <td class="saveBtn">
-              <span class="material-icons ">
-                save
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="hour">10AM</th>
-            <td class="">
-              <textarea name="" id="input"></textarea>
-            </td>
-            <td class="saveBtn">
-              <span class="material-icons ">
-                save
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="hour">12PM</th>
-            <td class="">
-              <textarea name="" id="input"></textarea>
-            </td>
-            <td class="saveBtn">
-              <span class="material-icons ">
-                save
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="hour">1PM</th>
-            <td class="">
-              <textarea name="" id="input"></textarea>
-            </td>
-            <td class="saveBtn">
-              <span class="material-icons ">
-                save
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="hour">2PM</th>
-            <td class="">
-              <textarea name="" id="input"></textarea>
-            </td>
-            <td class="saveBtn">
-              <span class="material-icons ">
-                save
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="hour">3PM</th>
-            <td class="">
-              <textarea name="" id="input"></textarea>
-            </td>
-            <td class="saveBtn">
-              <span class="material-icons ">
-                save
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="hour">4PM</th>
-            <td class="">
-              <textarea name="" id="input"></textarea>
-            </td>
-            <td class="saveBtn">
-              <span class="material-icons ">
-                save
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class="hour">5PM</th>
-            <td class="">
-              <textarea name="" id="input"></textarea>
-            </td>
-            <td class="saveBtn">
-              <span class="material-icons ">
-                save
-              </span>
-            </td>
-          </tr>
+
+      <div id="nine" class="row time-block">
+        <div class="col-2 hour">
+            9am
+        </div>
+        <textarea class="col-9 description">
+        </textarea>
+        <button type="button" class="btn saveBtn col-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="ten" class="row time-block">
+        <div class="col-2 hour">
+            10am
+        </div>
+        <textarea class="col-9 description">
+        </textarea>
+        <button type="button" class="btn saveBtn col-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="eleven" class="row time-block">
+        <div class="col-2 hour">
+            11am
+        </div>
+        <textarea class="col-9 description">
+        </textarea>
+        <button type="button" class="btn saveBtn col-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="noon" class="row time-block">
+        <div class="col-2 hour">
+            12pm
+        </div>
+        <textarea class="col-9 description">
+        </textarea>
+        <button type="button" class="btn saveBtn col-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="one" class="row time-block">
+        <div class="col-2 hour">
+            1pm
+        </div>
+        <textarea class="col-9 description">
+        </textarea>
+        <button type="button" class="btn saveBtn col-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="two" class="row time-block">
+        <div class="col-2 hour">
+            2pm
+        </div>
+        <textarea class="col-9 description">
+        </textarea>
+        <button type="button" class="btn saveBtn col-1"><i class="fas fa-save"></i></button>
+      </div>    
+
+      <div id="three" class="row time-block">
+        <div class="col-2 hour">
+            3pm
+        </div>
+        <textarea class="col-9 description">
+        </textarea>
+        <button type="button" class="btn saveBtn col-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="four" class="row time-block">
+        <div class="col-2 hour">
+            4pm
+        </div>
+        <textarea class="col-9 description">
+        </textarea>
+        <button type="button" class="btn saveBtn col-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="five" class="row time-block">
+        <div class="col-2 hour">
+            5pm
+        </div>
+        <textarea class="col-9 description">
+        </textarea>
+        <button type="button" class="btn saveBtn col-1"><i class="fas fa-save"></i></button>
+      </div>
+
         </tbody>
       </table>
     </div>

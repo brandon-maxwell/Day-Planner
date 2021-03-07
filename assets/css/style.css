@@ -4,6 +4,7 @@ body {
   line-height: 1;
 }
 
+/* user input area */
 textarea{
   background: transparent;
   border: none;
@@ -21,33 +22,31 @@ textarea{
   border-bottom: 10px solid black;
 }
 
+/* used for user input text */
 .description{
   white-space: pre-wrap;
 }
 
-/* ??? */
+/* formating for each row/block of schedule */
 .time-block{
   text-align: center;
   border-radius: 15px;
 }
 
-/* ??? */
+/* row container formating --> col go in this div */
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;;
 }
 
-/* ??? */
+/* formating for hour col */
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
   width: 5%;
-}
-
-#input {
-  width: 100%;
+  text-align: end;
 }
 
 /* past time blocks */
@@ -68,6 +67,7 @@ textarea{
   color: white;
 }
 
+/* button on right */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -77,7 +77,7 @@ textarea{
   width: 5%;
 }
 
-/* button on right */
+/* save button hover */
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
